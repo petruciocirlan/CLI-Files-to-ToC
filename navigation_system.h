@@ -2,7 +2,7 @@
 #ifndef NAVIGATION_SYSTEM
 #define NAVIGATION_SYSTEM
 
-#include "cm_libs.h"
+#include "libdep.h"
 #pragma comment(lib, "Shlwapi.lib")
 #include <shlwapi.h>
 

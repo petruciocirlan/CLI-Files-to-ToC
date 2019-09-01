@@ -26,16 +26,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cm_libs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="navigation_system.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="commands.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="libdep.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

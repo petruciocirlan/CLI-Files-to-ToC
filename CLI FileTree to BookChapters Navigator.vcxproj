@@ -129,9 +129,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="commands.h" />
-    <ClInclude Include="cm_libs.h" />
+    <ClInclude Include="libdep.h" />
     <ClInclude Include="navigation_system.h" />
-    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

@@ -2,7 +2,7 @@
 #ifndef CM_COMMANDS
 #define CM_COMMANDS
 
-#include "cm_libs.h"
+#include "libdep.h"
 extern map < string, FnCallPtr > CmdCall;
 
 void CM_Init(CM_INPUT, int);
