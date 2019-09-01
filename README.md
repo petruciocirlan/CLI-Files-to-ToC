@@ -5,7 +5,7 @@ This tool was initially created to be used in my app for the digital skills cert
 ## What it does
 
 Once opened up, the app compiles the paths to the folders and files (also the files from the subfolders etc.) 
-from the 'data' folder (which needs to be in the same directory ass the program). The first thing you'll see 
+from the 'data' folder (which needs to be in the same directory as the program). The first thing you'll see 
 is the Table of Contents which shows the 'chapters' (folders) and their 'sections' (files) from this 'book' that is
 the 'data' folder. You can select one section at a time and read it (display its contents).
 
@@ -16,7 +16,7 @@ This tool works just like any CLI. Use `HELP` to see a list of the available com
 |Commands|Usage|Role|
 |---|---|---|
 |`CLEAR`|`CLEAR`|Clears the console.|
-|`CL`|`CL <section name>`|Changes the selected section. Use quotes when section the section name contains spaces ("<section name>"). You can also use just a prefix as long as it is not shared between multiple sections/chapters (ex: `CL Hel` will select section "Hello world", but not if there is another section with that prefix, such as "Hello Neighbour!").|
+|`CL`|```CL <section name>```|Changes the selected section. Use quotes when the section name contains spaces (`"<section name>"`). You can also use just a prefix as long as it is not shared between multiple sections/chapters (ex: `CL Hel` will select section "Hello world", but not if there is another section with that prefix, such as "Hello Neighbour!").|
 |`HELP`|`HELP`|Displays a list of the available commands.|
 |`READ`|`READ`|Displays contents of selected section.|
 |`CONTENT`|`CONTENT`|Displays the Table of Contents as seen when opening the app.|
