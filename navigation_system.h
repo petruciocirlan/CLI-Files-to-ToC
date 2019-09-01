@@ -32,7 +32,7 @@ struct node_data
 	{
 		order = stringToNum(fullName.substr(0, 3));
 		fullName.erase(0, 3);
-		int eraseExt = fullName.find('.');
+		size_t eraseExt = fullName.find('.');
 		if (eraseExt != string::npos)
 			name = fullName.erase(eraseExt);
 		else
