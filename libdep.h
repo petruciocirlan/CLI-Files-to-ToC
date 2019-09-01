@@ -1,6 +1,6 @@
 #pragma once
-#ifndef CM_LIBS
-#define CM_LIBS
+#ifndef LIBDEP
+#define LIBDEP
 
 #include <windows.h>
 #include <winuser.h>
@@ -26,4 +26,4 @@ typedef void(*FnCallPtr)(CM_INPUT, int);
 #include "commands.h"
 #include "navigation_system.h"
 
-#endif // CM_LIBS
+#endif // LIBDEP

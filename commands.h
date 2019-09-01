@@ -1,6 +1,6 @@
 #pragma once
-#ifndef CM_COMMANDS
-#define CM_COMMANDS
+#ifndef COMMANDS
+#define COMMANDS
 
 #include "libdep.h"
 extern map < string, FnCallPtr > CmdCall;
@@ -16,4 +16,4 @@ void cmd_end_navsys(CM_INPUT, int);
 inline void throw_error(string);
 int GetUserInput(CM_INPUT&, int&);
 
-#endif // CM_COMMANDS
+#endif // COMMANDS

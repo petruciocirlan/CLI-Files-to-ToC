@@ -14,9 +14,9 @@ the 'data' folder. You can select one section at a time and read it (display its
 This tool works just like any CLI. Use `HELP` to see a list of the available commands.  
 
 |Commands|Usage|Role|
-|---|---|---|
+|---|:---:|---|
 |`CLEAR`|`CLEAR`|Clears the console.|
-|`CL`|```CL <section name>```|Changes the selected section. Use quotes when the section name contains spaces (`"<section name>"`). You can also use just a prefix as long as it is not shared between multiple sections/chapters (ex: `CL Hel` will select section "Hello world", but not if there is another section with that prefix, such as "Hello Neighbour!").|
+|`CL`|`CL <section name>`|Changes the selected section. Use quotes when the section name contains spaces (`"<section name>"`). You can also use just a prefix as long as it is not shared between multiple sections/chapters (ex: `CL Hel` will select section "Hello world", but not if there is another section with that prefix, such as "Hello Neighbour!").|
 |`HELP`|`HELP`|Displays a list of the available commands.|
 |`READ`|`READ`|Displays contents of selected section.|
 |`CONTENT`|`CONTENT`|Displays the Table of Contents as seen when opening the app.|
