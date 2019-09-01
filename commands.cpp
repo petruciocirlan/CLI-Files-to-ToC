@@ -2,7 +2,7 @@
 
 map < string, FnCallPtr > CmdCall;
 
-void CM_Init(CM_INPUT ARGV, int ARGC)
+void CM_Init()
 {
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	PCOORD garbage{ 0 };
@@ -16,7 +16,7 @@ void CM_Init(CM_INPUT ARGV, int ARGC)
 	CmdCall["content"] = cmd_show_lessons;
 	CmdCall["exit"] = cmd_end_navsys;
 
-	CmdCall["clear"](ARGV, ARGC);
+	CmdCall["clear"]({}, 0);
 
 	string dataFolder = PROGRAM_PATH.substr(0, 1 + PROGRAM_PATH.rfind("\\", string::npos));
 
@@ -43,9 +43,10 @@ void CM_Init(CM_INPUT ARGV, int ARGC)
 
 	current_location = NULL;
 
-	CmdCall["clear"](ARGV, ARGC);
+	CmdCall["clear"]({}, 0);
 	cout << "Write \"HELP\" to see a list of available commands!\n";
 
+	cout << '\n';
 	SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY);
 	cout << "CHAPTER ";
 	SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN | FOREGROUND_RED | FOREGROUND_INTENSITY);

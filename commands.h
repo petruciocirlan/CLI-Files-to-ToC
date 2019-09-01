@@ -5,7 +5,7 @@
 #include "libdep.h"
 extern map < string, FnCallPtr > CmdCall;
 
-void CM_Init(CM_INPUT, int);
+void CM_Init();
 void cmd_clear(CM_INPUT, int);
 void cmd_change_lesson(CM_INPUT, int);
 void cmd_help(CM_INPUT, int);

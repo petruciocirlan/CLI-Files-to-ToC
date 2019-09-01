@@ -6,34 +6,6 @@ bool CM_Running;
 nav_node* starting_node, * current_location;
 trie* trie_start;
 
-void run_navigation_system(CM_INPUT ARGV, int ARGC)
-{
-	CM_Running = true;
-	CM_Init(ARGV, ARGC);
-
-	while (CM_Running)
-	{
-		CM_INPUT UserInput;
-		int InputSize = 0;
-		if (GetUserInput(UserInput, InputSize) != 0)
-			continue;
-
-		if (!InputSize)
-			continue;
-
-		if (CmdCall.find(UserInput[0]) == CmdCall.end())
-		{
-			cout << "\"" + UserInput[0] + "\" is not recognized as a command,\n"
-				"to see a list of available commands use \"HELP\"\n"
-				"\n";
-		}
-		else
-			CmdCall[UserInput[0]](UserInput, InputSize);
-	}
-
-	return;
-}
-
 void print_navigation_tree(nav_node* node, int depth)
 {
 	if (node->children.empty() != FALSE)

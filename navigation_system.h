@@ -9,7 +9,6 @@
 extern string PROGRAM_PATH;
 extern HANDLE hConsole;
 extern bool CM_Running;
-void run_navigation_system(CM_INPUT, int);
 
 struct node_data
 {
@@ -48,7 +47,6 @@ struct nav_node
 
 	nav_node *parent;
 	vector < pair < int, nav_node* > > children;
-
 };
 
 struct trie
